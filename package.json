@@ -1,0 +1,22 @@
+{
+  "name": "uisu-test",
+  "version": "0.2.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uisu/test.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "uisu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uisu/test/issues"
+  },
+  "homepage": "https://github.com/uisu/test"
+}
