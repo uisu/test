@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>zhan</title>
+		<link rel="stylesheet" href="lib/normalizecss/normalize.css" />
+		<link rel="stylesheet" href="lib/mdl/material.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="lib/jquery/jquery-1.11.3.min.js"></script>
+		<script src="lib/mdl/material.min.js"></script>
+	</head>
+
+	<body>
+		<br>
+
+		<a href="#" class="mdl-badge" data-badge="7">This link contains a badge.</a>
+		<br>
+
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+			<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" />
+			<label class="mdl-textfield__label" for="sample4">Number...</label>
+			<span class="mdl-textfield__error">Input is not a number!</span>
+		</div>
+		<br>
+
+		<div>
+			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+				<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
+				<span class="mdl-checkbox__label">Checkbox</span>
+			</label>
+			<br>
+			<br>
+			<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+				<input type="checkbox" id="switch-2" class="mdl-switch__input" />
+				<span class="mdl-switch__label"></span>
+			</label>
+		</div>
+		<br>
+
+		<div>
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+				Button
+			</button>
+		</div>
+		<br>
+
+		<div>
+			<button id="menu-speed" class="mdl-button mdl-js-button">
+				Button
+			</button>
+			<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="menu-speed">
+				<li class="mdl-menu__item">Fast</li>
+				<li class="mdl-menu__item">Medium</li>
+				<li class="mdl-menu__item">Slow</li>
+			</ul>
+		</div>
+		<br>
+
+		<p style="width:300px">
+			<input class="mdl-slider mdl-js-slider" type="range" id="s1" min="0" max="100" value="10" step="1" />
+		</p>
+		<br>
+
+		<div class="mdl-card mdl-shadow--2dp demo-card-wide">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">Welcome</h2>
+			</div>
+			<div class="mdl-card__supporting-text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+			</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+			</div>
+			<div class="mdl-card__menu">
+				<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">share</i>
+				</button>
+			</div>
+		</div>
+
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">CS 2 (4 on phone)</div>
+			<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">CS 2 (4 on phone)</div>
+			<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">CS 2 (4 on phone)</div>
+			<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">CS 2 (4 on phone)</div>
+		</div>
+		<br>
+
+		<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+			<div class="mdl-tabs__tab-bar">
+				<a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+				<a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+				<a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+			</div>
+
+			<div class="mdl-tabs__panel is-active" id="starks-panel">
+				<ul>
+					<li>Eddard</li>
+					<li>Catelyn</li>
+					<li>Robb</li>
+					<li>Sansa</li>
+					<li>Brandon</li>
+					<li>Arya</li>
+					<li>Rickon</li>
+				</ul>
+			</div>
+			<div class="mdl-tabs__panel" id="lannisters-panel">
+				<ul>
+					<li>Tywin</li>
+					<li>Cersei</li>
+					<li>Jamie</li>
+					<li>Tyrion</li>
+				</ul>
+			</div>
+			<div class="mdl-tabs__panel" id="targaryens-panel">
+				<ul>
+					<li>Viserys</li>
+					<li>Daenerys</li>
+				</ul>
+			</div>
+		</div>
+		<br>
+
+		<div>
+			<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+				<thead>
+					<tr>
+						<th class="mdl-data-table__cell--non-numeric">Material</th>
+						<th>Quantity</th>
+						<th>Unit price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+						<td>25</td>
+						<td>$2.90</td>
+					</tr>
+					<tr>
+						<td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+						<td>50</td>
+						<td>$1.25</td>
+					</tr>
+					<tr>
+						<td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+						<td>10</td>
+						<td>$2.35</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br>
+
+	</body>
+
+</html>
