@@ -5,7 +5,7 @@
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
-    "zg": "./bin/generator"
+    "zg": "./bin/generator.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
