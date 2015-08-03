@@ -30,7 +30,6 @@ gulp.task('style-css', function() {
 gulp.task('css', ['style-css'], function() {
 	return src([
 			'lib/normalizecss/normalize.min.css',
-			'lib/mdl/material.min.css',
 			'css/style.min.css'
 		])
 		.pipe(concat('style.all.min.css'))
@@ -56,8 +55,7 @@ gulp.task('img', function() {
 // 合并js库(只需执行一次)
 gulp.task('lib-js', function() {
 	return src([
-			'lib/jquery/jquery-1.11.3.min.js',
-			'lib/mdl/material.min.js'
+			'lib/jquery/jquery-1.11.3.min.js'
 		])
 		.pipe(concat('lib.min.js'))
 		.pipe(dest('dist/js'));
