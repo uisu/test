@@ -16,6 +16,16 @@ gulp.task('normalize-css', function() {
 		.pipe(dest('lib/normalizecss'));
 });
 
+// 压缩bootstrap-grid.css
+gulp.task('grid-css', function() {
+	return src([
+			'lib/bootstrap-grid/bootstrap-grid.css'
+		])
+		.pipe(rename("bootstrap-grid.min.css"))
+		.pipe(minifyCss())
+		.pipe(dest('lib/bootstrap-grid'));
+});
+
 // 压缩style.css
 gulp.task('style-css', function() {
 	return src([
@@ -30,6 +40,7 @@ gulp.task('style-css', function() {
 gulp.task('css', ['style-css'], function() {
 	return src([
 			'lib/normalizecss/normalize.min.css',
+			'lib/bootstrap-grid/bootstrap-grid.min.css',
 			'css/style.min.css'
 		])
 		.pipe(concat('style.all.min.css'))
@@ -83,7 +94,7 @@ gulp.task('js', ['index-js'], function() {
 
 
 // ======================= DEFAULT =======================
-gulp.task('default', ['normalize-css', 'css', 'font', 'img', 'lib-js', 'js'], function() {
+gulp.task('default', ['normalize-css', 'grid-css', 'css', 'font', 'img', 'lib-js', 'js'], function() {
 	//console.log('done');
 });
 
